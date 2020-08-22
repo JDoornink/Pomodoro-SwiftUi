@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0154091858BF3835FD0DC14C /* Pods_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E501704DC5BB25F127FA1C8 /* Pods_macOS.framework */; };
 		40F96B6DAA90F6F8240F0941 /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F4102A43E1D3F871805B4C /* Pods_iOS.framework */; };
+		901A250A24F177AD00852185 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A250924F177AD00852185 /* SignInWithAppleButton.swift */; };
+		901A250B24F177AD00852185 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A250924F177AD00852185 /* SignInWithAppleButton.swift */; };
+		901A251324F179DD00852185 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A251224F179DD00852185 /* SignInView.swift */; };
+		901A251424F179DD00852185 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A251224F179DD00852185 /* SignInView.swift */; };
+		901A251724F1851D00852185 /* SingInWithAppleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A251624F1851D00852185 /* SingInWithAppleCoordinator.swift */; };
+		901A251824F1851D00852185 /* SingInWithAppleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A251624F1851D00852185 /* SingInWithAppleCoordinator.swift */; };
 		90223E1524BD593F00EFDF73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90223E1424BD593F00EFDF73 /* GoogleService-Info.plist */; };
 		90223E1624BD593F00EFDF73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90223E1424BD593F00EFDF73 /* GoogleService-Info.plist */; };
 		90223E1924BD661700EFDF73 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90223E1824BD661700EFDF73 /* TaskRepository.swift */; };
@@ -32,6 +38,10 @@
 		718BC107CE77CFF4B8C22340 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		72ACB2EE96CE3400ED10CAC8 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8A2D2920A58EEEBF28FA7BD7 /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		901A250924F177AD00852185 /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
+		901A251224F179DD00852185 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		901A251624F1851D00852185 /* SingInWithAppleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInWithAppleCoordinator.swift; sourceTree = "<group>"; };
+		901A251924F1900600852185 /* Pomodoro-SwiftUI-FB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pomodoro-SwiftUI-FB.entitlements"; sourceTree = "<group>"; };
 		90223E1424BD593F00EFDF73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90223E1824BD661700EFDF73 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		9081961D24B24F3600FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pomodoro_SwiftUI_FBApp.swift; path = Shared/App/Pomodoro_SwiftUI_FBApp.swift; sourceTree = SOURCE_ROOT; };
@@ -87,6 +97,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		901A251524F184E400852185 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				901A251624F1851D00852185 /* SingInWithAppleCoordinator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		90223E1724BD660300EFDF73 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +130,7 @@
 			children = (
 				90223E1724BD660300EFDF73 /* Repositories */,
 				9081964224B2513600FE8ED0 /* App */,
+				901A251524F184E400852185 /* Services */,
 				9081963E24B24F7E00FE8ED0 /* Model */,
 				9081964124B250C700FE8ED0 /* View */,
 				9081961F24B24F3800FE8ED0 /* Assets.xcassets */,
@@ -132,6 +151,7 @@
 		9081962624B24F3800FE8ED0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				901A251924F1900600852185 /* Pomodoro-SwiftUI-FB.entitlements */,
 				9081962724B24F3800FE8ED0 /* Info.plist */,
 			);
 			path = iOS;
@@ -159,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				9081961E24B24F3600FE8ED0 /* TaskListView.swift */,
+				901A250924F177AD00852185 /* SignInWithAppleButton.swift */,
+				901A251224F179DD00852185 /* SignInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,11 +369,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				90223E1924BD661700EFDF73 /* TaskRepository.swift in Sources */,
+				901A251724F1851D00852185 /* SingInWithAppleCoordinator.swift in Sources */,
 				9081963224B24F3800FE8ED0 /* TaskListView.swift in Sources */,
 				9081964624B25BDC00FE8ED0 /* TaskCellViewModel.swift in Sources */,
 				9081964924B25EAC00FE8ED0 /* TaskListViewModel.swift in Sources */,
 				9081964024B24F8D00FE8ED0 /* Task.swift in Sources */,
 				9081963024B24F3800FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift in Sources */,
+				901A251324F179DD00852185 /* SignInView.swift in Sources */,
+				901A250A24F177AD00852185 /* SignInWithAppleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,10 +384,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901A251424F179DD00852185 /* SignInView.swift in Sources */,
+				901A250B24F177AD00852185 /* SignInWithAppleButton.swift in Sources */,
 				9081964724B25BDC00FE8ED0 /* TaskCellViewModel.swift in Sources */,
 				9081964A24B25EAC00FE8ED0 /* TaskListViewModel.swift in Sources */,
 				9081963324B24F3800FE8ED0 /* TaskListView.swift in Sources */,
 				9081963124B24F3800FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift in Sources */,
+				901A251824F1851D00852185 /* SingInWithAppleCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +514,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS/Pomodoro-SwiftUI-FB.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4BANWVUV2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -508,7 +538,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS/Pomodoro-SwiftUI-FB.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4BANWVUV2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
