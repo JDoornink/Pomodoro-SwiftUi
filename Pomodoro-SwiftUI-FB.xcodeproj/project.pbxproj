@@ -3,27 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0154091858BF3835FD0DC14C /* Pods_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E501704DC5BB25F127FA1C8 /* Pods_macOS.framework */; };
+		40F96B6DAA90F6F8240F0941 /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F4102A43E1D3F871805B4C /* Pods_iOS.framework */; };
+		90223E1524BD593F00EFDF73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90223E1424BD593F00EFDF73 /* GoogleService-Info.plist */; };
+		90223E1624BD593F00EFDF73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90223E1424BD593F00EFDF73 /* GoogleService-Info.plist */; };
+		90223E1924BD661700EFDF73 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90223E1824BD661700EFDF73 /* TaskRepository.swift */; };
 		9081963024B24F3800FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081961D24B24F3600FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift */; };
 		9081963124B24F3800FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081961D24B24F3600FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift */; };
-		9081963224B24F3800FE8ED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081961E24B24F3600FE8ED0 /* ContentView.swift */; };
-		9081963324B24F3800FE8ED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081961E24B24F3600FE8ED0 /* ContentView.swift */; };
+		9081963224B24F3800FE8ED0 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081961E24B24F3600FE8ED0 /* TaskListView.swift */; };
+		9081963324B24F3800FE8ED0 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081961E24B24F3600FE8ED0 /* TaskListView.swift */; };
 		9081963424B24F3800FE8ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9081961F24B24F3800FE8ED0 /* Assets.xcassets */; };
 		9081963524B24F3800FE8ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9081961F24B24F3800FE8ED0 /* Assets.xcassets */; };
+		9081964024B24F8D00FE8ED0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081963F24B24F8D00FE8ED0 /* Task.swift */; };
+		9081964624B25BDC00FE8ED0 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081964524B25BDC00FE8ED0 /* TaskCellViewModel.swift */; };
+		9081964724B25BDC00FE8ED0 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081964524B25BDC00FE8ED0 /* TaskCellViewModel.swift */; };
+		9081964924B25EAC00FE8ED0 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081964824B25EAC00FE8ED0 /* TaskListViewModel.swift */; };
+		9081964A24B25EAC00FE8ED0 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081964824B25EAC00FE8ED0 /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9081961D24B24F3600FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_SwiftUI_FBApp.swift; sourceTree = "<group>"; };
-		9081961E24B24F3600FE8ED0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08F4102A43E1D3F871805B4C /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6392317082A89D79244C77 /* Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.debug.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6E501704DC5BB25F127FA1C8 /* Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718BC107CE77CFF4B8C22340 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		72ACB2EE96CE3400ED10CAC8 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8A2D2920A58EEEBF28FA7BD7 /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		90223E1424BD593F00EFDF73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90223E1824BD661700EFDF73 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		9081961D24B24F3600FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pomodoro_SwiftUI_FBApp.swift; path = Shared/App/Pomodoro_SwiftUI_FBApp.swift; sourceTree = SOURCE_ROOT; };
+		9081961E24B24F3600FE8ED0 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		9081961F24B24F3800FE8ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9081962424B24F3800FE8ED0 /* Pomodoro-SwiftUI-FB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro-SwiftUI-FB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9081962724B24F3800FE8ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9081962C24B24F3800FE8ED0 /* Pomodoro-SwiftUI-FB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro-SwiftUI-FB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9081962E24B24F3800FE8ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9081962F24B24F3800FE8ED0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9081963F24B24F8D00FE8ED0 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9081964524B25BDC00FE8ED0 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		9081964824B25EAC00FE8ED0 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F96B6DAA90F6F8240F0941 /* Pods_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,12 +60,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0154091858BF3835FD0DC14C /* Pods_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60E429EDE3DD9531FBD2CD02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				718BC107CE77CFF4B8C22340 /* Pods-iOS.debug.xcconfig */,
+				72ACB2EE96CE3400ED10CAC8 /* Pods-iOS.release.xcconfig */,
+				6D6392317082A89D79244C77 /* Pods-macOS.debug.xcconfig */,
+				8A2D2920A58EEEBF28FA7BD7 /* Pods-macOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7AE5E6BC92E4ADFC87E1B5D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F4102A43E1D3F871805B4C /* Pods_iOS.framework */,
+				6E501704DC5BB25F127FA1C8 /* Pods_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90223E1724BD660300EFDF73 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				90223E1824BD661700EFDF73 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		9081961724B24F3600FE8ED0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,15 +102,20 @@
 				9081962624B24F3800FE8ED0 /* iOS */,
 				9081962D24B24F3800FE8ED0 /* macOS */,
 				9081962524B24F3800FE8ED0 /* Products */,
+				60E429EDE3DD9531FBD2CD02 /* Pods */,
+				7AE5E6BC92E4ADFC87E1B5D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9081961C24B24F3600FE8ED0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				9081961D24B24F3600FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift */,
-				9081961E24B24F3600FE8ED0 /* ContentView.swift */,
+				90223E1724BD660300EFDF73 /* Repositories */,
+				9081964224B2513600FE8ED0 /* App */,
+				9081963E24B24F7E00FE8ED0 /* Model */,
+				9081964124B250C700FE8ED0 /* View */,
 				9081961F24B24F3800FE8ED0 /* Assets.xcassets */,
+				90223E1424BD593F00EFDF73 /* GoogleService-Info.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -90,6 +146,40 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		9081963E24B24F7E00FE8ED0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9081963F24B24F8D00FE8ED0 /* Task.swift */,
+				9081964424B25B9200FE8ED0 /* ViewModels */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9081964124B250C700FE8ED0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9081961E24B24F3600FE8ED0 /* TaskListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9081964224B2513600FE8ED0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9081961D24B24F3600FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9081964424B25B9200FE8ED0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9081964524B25BDC00FE8ED0 /* TaskCellViewModel.swift */,
+				9081964824B25EAC00FE8ED0 /* TaskListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9081963824B24F3800FE8ED0 /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
+				F17019DB380C7028C4E14F49 /* [CP] Check Pods Manifest.lock */,
 				9081962024B24F3800FE8ED0 /* Sources */,
 				9081962124B24F3800FE8ED0 /* Frameworks */,
 				9081962224B24F3800FE8ED0 /* Resources */,
+				DE5A5967DA66A9ECA3406B77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9081963B24B24F3800FE8ED0 /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
+				D1E942DEA24B7DBE9D2B3E9F /* [CP] Check Pods Manifest.lock */,
 				9081962824B24F3800FE8ED0 /* Sources */,
 				9081962924B24F3800FE8ED0 /* Frameworks */,
 				9081962A24B24F3800FE8ED0 /* Resources */,
@@ -169,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9081963424B24F3800FE8ED0 /* Assets.xcassets in Resources */,
+				90223E1524BD593F00EFDF73 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,17 +271,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				9081963524B24F3800FE8ED0 /* Assets.xcassets in Resources */,
+				90223E1624BD593F00EFDF73 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1E942DEA24B7DBE9D2B3E9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE5A5967DA66A9ECA3406B77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17019DB380C7028C4E14F49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9081962024B24F3800FE8ED0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9081963224B24F3800FE8ED0 /* ContentView.swift in Sources */,
+				90223E1924BD661700EFDF73 /* TaskRepository.swift in Sources */,
+				9081963224B24F3800FE8ED0 /* TaskListView.swift in Sources */,
+				9081964624B25BDC00FE8ED0 /* TaskCellViewModel.swift in Sources */,
+				9081964924B25EAC00FE8ED0 /* TaskListViewModel.swift in Sources */,
+				9081964024B24F8D00FE8ED0 /* Task.swift in Sources */,
 				9081963024B24F3800FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +359,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9081963324B24F3800FE8ED0 /* ContentView.swift in Sources */,
+				9081964724B25BDC00FE8ED0 /* TaskCellViewModel.swift in Sources */,
+				9081964A24B25EAC00FE8ED0 /* TaskListViewModel.swift in Sources */,
+				9081963324B24F3800FE8ED0 /* TaskListView.swift in Sources */,
 				9081963124B24F3800FE8ED0 /* Pomodoro_SwiftUI_FBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +482,7 @@
 		};
 		9081963924B24F3800FE8ED0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718BC107CE77CFF4B8C22340 /* Pods-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +504,7 @@
 		};
 		9081963A24B24F3800FE8ED0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72ACB2EE96CE3400ED10CAC8 /* Pods-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,6 +527,7 @@
 		};
 		9081963C24B24F3800FE8ED0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6392317082A89D79244C77 /* Pods-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +550,7 @@
 		};
 		9081963D24B24F3800FE8ED0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2D2920A58EEEBF28FA7BD7 /* Pods-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
